@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: #16192e;
+  height: 100vh;
+  font-family: 'Architects Daughter', cursive;
+}
+
+header{
+  width: 100%;
+  height: 50px;
+  background: #272b43;
+}
+header img {
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+}
+.filter-gender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+small{
+  color: white;
+}
+.tendina{
+    margin-left: 5px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: white;
+}
+
+.container{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 150px;
+    height: 300px;
+    background-color:#272b43;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+.card img{
+    width: 100px;
+    height:100px;
+}
