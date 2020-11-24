@@ -3,23 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>Vue-dischi</title>
-    <!-- CSS -->
+    <!-- css -->
     <link rel="stylesheet" href="style.css">
-    <!-- GOOGLE FONT -->
+    <!--font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
-    <!-- AJAX -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- ajax-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js" charset="utf-8"></script>
-    <!-- VUE -->
+    <!-- vue-->
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   </head>
   <body>
     <div id="root">
       <header>
+        <!-- logo  -->
         <div class="header-logo">
           <img src="img/logo.png" alt="logo spotify">
         </div>
       </header>
+      <!-- selezione genere -->
       <div class="filter-gender">
         <small>Filter by gender: </small>
         <select class="tendina" v-model="selezionato">
@@ -27,17 +29,19 @@
           <option :value="genere" v-for="genere in generi">{{ genere }}</option>
         </select>
       </div>
+      <!-- container card -->
       <div class="container">
+        <!-- v-for and v-if per album e per scelta genere album -->
         <div class="card" v-for="disco in dischi" v-if="disco.genre == selezionato || selezionato == ''">
           <img :src="disco.poster" :alt="disco.author">
           <h3>{{ disco.title }}</h3>
           <h4>{{ disco.author }}</h4>
+          <h4>{{ disco.year }}</h4>
           <span>{{ disco.genre }}</span>
-          <span>{{ disco.year }}</span>
         </div>
       </div>
     </div>
-        <!-- JAVASCRIPT -->
+        <!-- js -->
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
