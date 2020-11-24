@@ -1,24 +1,24 @@
 var app = new Vue({
   el: "#root",
   data: {
-    // Array completo
+    //array completo
     dischi: [],
-    // Array di generi nusicali
+    // array di generi musicali
     generi: [],
-    // Valore dell'elemento selezionato ocn la tendina
+    //elemento selezionato nella tendina
     selezionato: ""
   },
   mounted() {
     axios
       .get('https://flynn.boolean.careers/exercises/api/array/music')
       .then((response) => {
-      // Assegno direttamente il risultato dell'api all'array dischi
+      //pacchetto api per array dischi
         this.dischi = response.data.response;
       })
       .then((response) => {
-        // Faccio un ciclo per ricavare i tipi di generi presenti nell'array dischi
+        // ciclo per ricavare i tipi di generi presenti nel array dischi
         this.dischi.forEach((disco) => {
-          // Faccio push dei generi solo se non sono già inclusi nel nuovo array generi
+          // push dei generi se non sono nel array generi
           if(!this.generi.includes(disco.genre)) {
             this.generi.push(disco.genre);
           }
