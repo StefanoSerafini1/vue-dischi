@@ -1,13 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
   background: #16192e;
   height: 100vh;
-  font-family: 'Architects Daughter', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header{
@@ -15,11 +15,13 @@ header{
   height: 50px;
   background: #272b43;
 }
+/* logo spotify */
 header img {
-    height: 40px;
-    width: 40px;
-    margin-top: 5px;
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
 }
+/* selezione genere */
 .filter-gender{
   display: flex;
   justify-content: center;
@@ -30,34 +32,38 @@ small{
   color: white;
 }
 .tendina{
-    margin-left: 5px;
-    border: 1px solid black;
-    border-radius: 7px;
-    background-color: white;
+  margin-left: 5px;
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: white;
 }
-
+/* parte contenitore schede */
 .container{
-    margin: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
+/* card album and immagini album */
 .card{
-    width: 150px;
-    height: 300px;
-    background-color:#272b43;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    font-size: 15px;
+  width: 150px;
+  height: 300px;
+  background-color:#272b43;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 15px;
 }
-
+h4{
+  color: #747997;
+  font-size: 13px;
+}
 .card img{
-    width: 100px;
-    height:100px;
+  width: 100px;
+  height:100px;
 }
