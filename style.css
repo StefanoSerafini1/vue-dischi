@@ -5,7 +5,7 @@
 }
 
 body{
-  background: #16192e;
+  background: #15182af0;
   height: 100vh;
   font-family: 'Montserrat', sans-serif;
 }
@@ -13,13 +13,13 @@ body{
 header{
   width: 100%;
   height: 50px;
-  background: #272b43;
+  background: #3d3e4996;
 }
 /* logo spotify */
 header img {
   height: 40px;
   width: 40px;
-  margin-top: 5px;
+  margin: 5px;
 }
 /* selezione genere */
 .filter-gender{
@@ -49,7 +49,7 @@ small{
 .card{
   width: 150px;
   height: 300px;
-  background-color:#272b43;
+  background-color:#3d3e4996;
   padding: 10px;
   margin: 10px 10px;
   display: flex;
